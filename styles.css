@@ -1,0 +1,8 @@
+/* BODY - WHOLE PAGE */
+body {
+    font-family: helvetica, arial, sans-serif;
+    background-color: ghostwhite;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px 10px;
+  }
