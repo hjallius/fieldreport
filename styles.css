@@ -3,7 +3,7 @@
     /* WHOLE PAGE */
     body {
         font-family: helvetica, arial, sans-serif;
-        background-color: ghostwhite;
+        background-color: rgb(248, 255, 248);
         max-width: 750px;
         margin: 0 auto;
         padding: 30px 10px;
