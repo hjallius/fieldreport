@@ -2,23 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title>Field Report</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 
+<style>
+    body { 
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px
+    }
+
+    #screen {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: forestgreen;
+    }
+
+    #scan, #bezel {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+
+    #scan {
+        opacity: 95%;
+    }
+
+    #content {
+      font-family: time;
+      font-size: 23.9px;
+      text-shadow: 1px 1px 2px rgb(163, 181, 137), 0 0  1em rgb(163, 181, 137), 0 0 0.2em rgb(163, 181, 137);
+      padding: 50px;
+      color: rgb(170, 255, 44);
+    }
+
+    span {
+      color: rgb(102, 145, 37);
+      animation: blink 1s infinite;
+    }
+
+    a:link {
+      color: rgb(170, 255, 44); 
+      text-decoration: none;
+    } 
+      
+    a:visited {
+      color: rgb(170, 255, 44); 
+      text-decoration: none;
+    }
+
+    @keyframes blink {
+      50% {opacity: 0;}
+      100% {opacity: 2;}
+    }
+
+    .body {
+    font-family: monospace;
+    }
+
+    .inner-wrapper {
+    display: inline-block;
+    text-align: left;
+    white-space: pre;
+    font-family: monospace;
+    margin: 0 auto;
+    width: auto;
+    }
+
+    .page-wrapper {
+	  text-align: center;
+    }
+</style>
+
 <body>
-    <!-- "FIELD REPORT." LOGO -->
-    <div id="logo"> <a href="https://fieldreport.co.uk/"><h1>Field Report.</h1></a></div>
-    <style> a:link {color: rgb(0, 0, 0); text-decoration: none;} a:visited {color: rgb(0, 0, 0); text-decoration: none; } </style>
+    <div id="screen">
+        <img src="scanlines.png" id="scan">
+        <div id="content">
+          <pre>
+          Ambient (1.000a 25-Nov-24) (Last on Thu Jan 9 @ 12:32)
+          --------------------------------------------------------------------
+          <a href="./index">[HOME]</a> <a href="./sitemap">SITEMAP</a> <a href="./archive">ARCHIVE</a> <a href="./about">ABOUT</a>
+          --------------------------------------------------------------------
+          |  ___(_) ___| | __| | |  _ \ ___ _ __   ___  _ __| |_ 
+          | |_  | |/ _ \ |/ _` | | |_) / _ \ '_ \ / _ \| '__| __|
+          |  _| | |  __/ | (_| | |  _ <  __/ |_) | (_) | |  | |_ 
+          |_|   |_|\___|_|\__,_| |_| \_\___| .__/ \___/|_|   \__| v.1.0
+          
+          Welcome to the personal website of Hjallius, the artist formerly 
+          known as the nightstick hockey men.
+          --------------------------------------------------------------------
+          LATEST UPDATES:
+          
+          
 
-    <!-- MENU -->
-    <div id="menu"></div> <a href="/about"><h2>About</h2></a></div>
+          
+          --------------------------------------------------------------------
+          ** Current Lunar Phase: Waxing Gibbous 
+          ** Happy New Year!
 
-    <!-- POST LIST -->
-    <main>
-        <a href="/reports/2024-11"><h3>November 2024</h3></a>
-        <a href="/reports/2024-10"><h3>October 2024</h3></a>
-    </main>
+          &gt;<span>|</span>
+        </pre>
+        </div>
+    </div>
 </body>
 </html>
